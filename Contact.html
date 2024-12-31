@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A showcase of basic html elements">
+    <meta name="author" content="Nick Cross">
+    <link rel="stylesheet" href="css/production.css">
+    <title>Sporting Event</title>
+</head>
+<body>
+    <div class="topnav">
+        <a href="/">Home</a>
+        <a href="Events.html">Games</a>
+        <a href="Menu.html">Menu</a>
+        <a href="Location.html">Location</a>
+        <a class="active" href="Contact.html">Contact Us</a>
+    </div>
+
+    <h1 style="color: red;">Contact Us</h1>
+    <form action="#" method="POST">
+        <!-- Personal Information Section -->
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your name">
+            <br><br>
+        
+            <label for="user-email">Email:</label>
+            <input type="email" id="user-email" name="user-email" required placeholder="Enter your email">
+            <br><br>
+        
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+            <br><br>
+            <p>How did you find this site:</p>
+            <div>
+                <input type="radio" id="google" name="find" value="Google">
+                <label for="google" style="margin-right: 20px;">Google</label>
+
+                <input type="radio" id="social" name="find" value="Social">
+                <label for="social">Social Media</label>
+            </div>
+        </fieldset>
+        <input type="submit" value="Submit">
+    </form>

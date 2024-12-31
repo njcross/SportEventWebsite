@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A showcase of basic html elements">
+    <meta name="author" content="Nick Cross">
+    <link rel="stylesheet" href="css/production.css">
+    <title>Sporting Event</title>
+</head>
+<body>
+    <div class="topnav">
+        <a href="/">Home</a>
+        <a href="Events.html">Games</a>
+        <a href="Menu.html">Menu</a>
+        <a class="active" href="Location.html">Location</a>
+        <a href="Contact.html">Contact Us</a>
+    </div>
+
+<h1>Our location</h1>
+
+<div id="googleMap" style="width:100%;height:400px;"></div>
+<address>
+    Written by <a href="mailto:webmaster@example.com">Nick Cross</a>.<br>
+    Visit us in: London<br>
+    Example.com<br>
+    Box 564, London<br>
+    UK
+</address>
+
+<p>Hours:</p>
+
+<table>
+    <tr class="hours_row"><th class="hours">Sunday</th><td>Closed</td></tr>
+    <tr class="hours_row"><th class="hours">Monday</th><td>9am - 5pm</td></tr>
+    <tr class="hours_row"><th class="hours">Tuesday</th><td>9am - 5pm</td></tr>
+    <tr class="hours_row"><th class="hours">Wednesday</th><td>9am - 5pm</td></tr>
+    <tr class="hours_row"><th class="hours">Thursday</th><td>9am - 5pm</td></tr>
+    </table>
+<script>
+function myMap() {
+var mapProp= {
+  center:new google.maps.LatLng(51.508742,-0.120850),
+  zoom:5,
+};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+</script>
+
+<!-- REPLACE "YOUR_KEY" with a valid key -->
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+
+</body>
+</html>
